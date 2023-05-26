@@ -1,0 +1,134 @@
+.App {
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.todo-container form {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.todo-container .filter-buttons {
+  margin-bottom: 20px;
+}
+
+.todo-container input[type="text"],
+.todo-container button[type="submit"] {
+  height: 30px;
+}
+
+.todo-container button[type="submit"] {
+  background-color: rgb(31, 31, 94);
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.filter-buttons {
+  margin-bottom: 10px;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.todo-item .todo-label {
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.todo-item .todo-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.todo-item .todo-actions button.todo-edit-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-container .todo-actions button.todo-delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-item .todo-actions button:hover {
+  background-color: #d32f2f;
+}
+
+.todo-item .todo-actions button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.5);
+}
+
+.todo-item.completed .todo-actions button {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.new-todo-input,
+.add-todo-button {
+  width: auto;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-buttons button.active {
+  background-color: green;
+  color: #ffffff;
+}
